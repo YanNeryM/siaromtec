@@ -27,6 +27,10 @@ function sServico () {
 	}
 }
 
+function sFormatarProduto () {
+	var formatarProduto = document.querySelector("#cFormatarProduto").value;
+}
+
 function sQuantProduto () {
 	var quantProduto = document.querySelector("#cQuantProduto").value;
 	console.log(quantProduto);
