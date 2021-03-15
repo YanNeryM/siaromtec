@@ -4,20 +4,21 @@ box_montarProduto.style.visibility = "hidden";
 
 function sServico () {
 	var servico = document.querySelector("#cServico").value;
-	switch (servico) {
-		case 1:
+	var nServico = servico;
+	switch (nServico) {
+		case 0:
 			box_formatarProduto.style.visibility = "visible";
 			box_limparProduto.style.visibility = "hidden";
 			box_montarProduto.style.visibility = "hidden";
 		break;
 		
-		case 2:
+		case 1:
 			box_formatarProduto.style.visibility = "hidden";
 			box_limparProduto.style.visibility = "visible";
 			box_montarProduto.style.visibility = "hidden";
 		break;
 		
-		case 3:
+		case 2:
 			box_formatarProduto.style.visibility = "hidden";
 			box_limparProduto.style.visibility = "hidden";
 			box_montarProduto.style.visibility = "visible";
