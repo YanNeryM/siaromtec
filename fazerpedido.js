@@ -36,8 +36,6 @@ function sServico () {
 	}
 }
 
-var txt_formatarProduto = null;
-
 function sFormatarProduto () {
 	var formatarProduto = document.querySelector("#cFormatarProduto").value;
 	switch (formatarProduto) {
@@ -57,8 +55,6 @@ function sFormatarProduto () {
 	console.log(txt_formatarProduto);
 }
 
-var txt_limparProduto = null;
-
 function sLimparProduto () {
 	var limparProduto = document.querySelector("#cLimparProduto").value;
 	switch (limparProduto) {
@@ -77,8 +73,6 @@ function sLimparProduto () {
 	
 	console.log(txt_limparProduto);
 }
-
-var txt_montarProduto = null;
 
 function sMontarProduto () {
 	var montarProduto = document.querySelector("#cMontarProduto").value;
