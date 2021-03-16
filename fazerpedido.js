@@ -53,7 +53,6 @@ function sFormatarProduto () {
 			txt_formatarProduto = "Notebook(s)";
 		break;
 	}
-	
 	console.log(txt_formatarProduto);
 }
 
