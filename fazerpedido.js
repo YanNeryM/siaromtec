@@ -36,61 +36,67 @@ function sServico () {
 	}
 }
 
+txt_formatarProduto = "";
+
 function sFormatarProduto () {
 	var formatarProduto = document.querySelector("#cFormatarProduto").value;
 	switch (formatarProduto) {
 		case "0":
-			var txt_formatarProduto = null;
+			txt_formatarProduto = "";
 		break;
 		
 		case "1":
-			var txt_formatarProduto = "Computador(es)";
+			txt_formatarProduto = "Computador(es)";
 		break;
 		
 		case "2":
-			var txt_formatarProduto = "Notebook(s)";
+			txt_formatarProduto = "Notebook(s)";
 		break;
 	}
 	
 	console.log(txt_formatarProduto);
 }
 
+txt_limparProduto = "";
+
 function sLimparProduto () {
 	var limparProduto = document.querySelector("#cLimparProduto").value;
 	switch (limparProduto) {
 		case "0":
-			var txt_limparProduto = null;
+			txt_limparProduto = "";
 		break;
 		
 		case "1":
-			var txt_limparProduto = "Computador(es)";
+			txt_limparProduto = "Computador(es)";
 		break;
 		
 		case "2":
-			var txt_limparProduto = "Notebook(s)";
+			txt_limparProduto = "Notebook(s)";
 		break;
 	}
 	
 	console.log(txt_limparProduto);
 }
 
+txt_montarProduto = "";
+
 function sMontarProduto () {
 	var montarProduto = document.querySelector("#cMontarProduto").value;
 	switch (montarProduto) {
 		case "0":
-			var txt_montarProduto = null;
+			txt_montarProduto = "";
 		break;
 		
 		case "1":
-			var txt_montarProduto = "Computador(es)";
+			txt_montarProduto = "Computador(es)";
 		break;
 		
 		case "2":
-			var txt_montarProduto = "Guarda-Roupa(s)";
+			txt_montarProduto = "Guarda-Roupa(s)";
 		break;
 			
 		case "3":
-			var txt_montarProduto = "Móvel(is)";
+			txt_montarProduto = "Móvel(is)";
 		break;
 	}
 	
