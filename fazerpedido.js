@@ -115,15 +115,27 @@ function sEnviarMensagem () {
 	var quantProduto = document.querySelector("#cQuantProduto").value;
 	switch (servico) {
 		case "0":
-			window.open("https://api.whatsapp.com/send?phone=55859997768969&text="+"Olá meu nome é " + nome + ", estou interessado(a) no serviço de Formatação de " + quantProduto + " " + txt_formatarProduto + ".");
+			if(txt_formatarProduto==""){
+				alert("Você não preencheu todos os campos.");
+			}else{
+				window.open("https://api.whatsapp.com/send?phone=55859997768969&text="+"Olá meu nome é " + nome + ", estou interessado(a) no serviço de Formatação de " + quantProduto + " " + txt_formatarProduto + ".");
+			}
 		break;
 		
 		case "1":
-			window.open("https://api.whatsapp.com/send?phone=55859997768969&text="+"Olá meu nome é " + nome + ", estou interessado(a) no serviço de Limpeza de " + quantProduto + " " + txt_limparProduto + ".");
+			if(txt_limparProduto==""){
+				alert("Você não preencheu todos os campos.");
+			}else{
+				window.open("https://api.whatsapp.com/send?phone=55859997768969&text="+"Olá meu nome é " + nome + ", estou interessado(a) no serviço de Limpeza de " + quantProduto + " " + txt_limparProduto + ".");
+			}
 		break;
 		
 		case "2":
-			window.open("https://api.whatsapp.com/send?phone=55859997768969&text="+"Olá meu nome é " + nome + ", estou interessado(a) no serviço de Montagem de " + quantProduto + " " + txt_montarProduto + ".");
+			if(txt_montarProduto==""){
+				alert("Você não preencheu todos os campos.");
+			}else{
+				window.open("https://api.whatsapp.com/send?phone=55859997768969&text="+"Olá meu nome é " + nome + ", estou interessado(a) no serviço de Montagem de " + quantProduto + " " + txt_montarProduto + ".");
+			}
 		break;
 	}
 }
