@@ -113,7 +113,7 @@ function sEnviarMensagem () {
 	var servico = document.querySelector("#cServico").value;
 	var nome = document.querySelector("#cNome").value;
 	var quantProduto = document.querySelector("#cQuantProduto").value;
-	if(nome==empty){
+	if(nome==""){
 		alert("O campo do seu nome é OBRIGATORIO!");
 	}else{
 	switch (servico) {
