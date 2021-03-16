@@ -1,3 +1,7 @@
 #cAgendamentoWeb{
-  
+  background:black;
+}
+
+input.cNome{
+  background: white;
 }
