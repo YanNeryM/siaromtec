@@ -1,6 +1,6 @@
 box_formatarProduto.style.visibility = "visible";
-box_limparProduto.style.visibility = "hidden";
-box_montarProduto.style.visibility = "hidden";
+box_limparProduto.style.visibility = "collapse";
+box_montarProduto.style.visibility = "collapse";
 
 var nome = document.querySelector("#cNome").value;
 
@@ -18,19 +18,19 @@ function sServico () {
 	switch (nServico) {
 		case "0":
 			box_formatarProduto.style.visibility = "visible";
-			box_limparProduto.style.visibility = "hidden";
-			box_montarProduto.style.visibility = "hidden";
+			box_limparProduto.style.visibility = "collapse";
+			box_montarProduto.style.visibility = "collapse";
 		break;
 		
 		case "1":
-			box_formatarProduto.style.visibility = "hidden";
+			box_formatarProduto.style.visibility = "collapse";
 			box_limparProduto.style.visibility = "visible";
-			box_montarProduto.style.visibility = "hidden";
+			box_montarProduto.style.visibility = "collapse";
 		break;
 		
 		case "2":
-			box_formatarProduto.style.visibility = "hidden";
-			box_limparProduto.style.visibility = "hidden";
+			box_formatarProduto.style.visibility = "collapse";
+			box_limparProduto.style.visibility = "collapse";
 			box_montarProduto.style.visibility = "visible";
 		break;
 	}
