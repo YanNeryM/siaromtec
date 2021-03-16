@@ -113,6 +113,9 @@ function sEnviarMensagem () {
 	var servico = document.querySelector("#cServico").value;
 	var nome = document.querySelector("#cNome").value;
 	var quantProduto = document.querySelector("#cQuantProduto").value;
+	if(nome==empty){
+		alert("O campo do seu nome é OBRIGATORIO!");
+	}else{
 	switch (servico) {
 		case "0":
 			if(txt_formatarProduto==""){
@@ -137,6 +140,7 @@ function sEnviarMensagem () {
 				window.open("https://api.whatsapp.com/send?phone=55859997768969&text="+"Olá meu nome é " + nome + ", estou interessado(a) no serviço de Montagem de " + quantProduto + " " + txt_montarProduto + ".");
 			}
 		break;
+	}
 	}
 }
 
